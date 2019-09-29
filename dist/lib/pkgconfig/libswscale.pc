@@ -1,12 +1,12 @@
-prefix=/Users/mac/dev/test/tmp/ffmpeg/../WasmVideoPlayer/dist
+prefix=/home/mskjql/Project/ffmpeg/../WasmVideoPlayer/dist
 exec_prefix=${prefix}
-libdir=${prefix}/lib
-includedir=${prefix}/include
+libdir=/home/mskjql/Project/ffmpeg/../WasmVideoPlayer/dist/lib
+includedir=/home/mskjql/Project/ffmpeg/../WasmVideoPlayer/dist/include
 
 Name: libswscale
 Description: FFmpeg image rescaling library
-Version: 4.6.100
-Requires: libavutil >= 55.58.100
+Version: 5.5.100
+Requires: libavutil >= 56.31.100
 Requires.private: 
 Conflicts:
 Libs: -L${libdir}  -lswscale -lm

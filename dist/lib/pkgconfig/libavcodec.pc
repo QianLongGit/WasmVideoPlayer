@@ -1,14 +1,14 @@
-prefix=/Users/mac/dev/test/tmp/ffmpeg/../WasmVideoPlayer/dist
+prefix=/home/mskjql/Project/ffmpeg/../WasmVideoPlayer/dist
 exec_prefix=${prefix}
-libdir=${prefix}/lib
-includedir=${prefix}/include
+libdir=/home/mskjql/Project/ffmpeg/../WasmVideoPlayer/dist/lib
+includedir=/home/mskjql/Project/ffmpeg/../WasmVideoPlayer/dist/include
 
 Name: libavcodec
 Description: FFmpeg codec library
-Version: 57.89.100
-Requires: libavutil >= 55.58.100
+Version: 58.54.100
+Requires: libavutil >= 56.31.100
 Requires.private: 
 Conflicts:
-Libs: -L${libdir}  -lavcodec -s USE_SDL=2 -lm -pthread
+Libs: -L${libdir}  -lavcodec -pthread -lm
 Libs.private: 
 Cflags: -I${includedir}
